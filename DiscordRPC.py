@@ -1,4 +1,4 @@
-from pypresence import Presence
+from pypresence import Presence, ActivityType
 import datetime
 
 client_id = '702984897496875072'
@@ -39,7 +39,7 @@ def update_Status(track, title, artist, time_remaining, username, artwork, butto
     if buttonIsEnabled:
         lastfmProfileButton = [{"label": "View Last.fm Profile", "url": str("https://www.last.fm/user/" + username)}]
 
-    RPC.update(details=title, state=track, end=time_remaining,
+    RPC.update(activity_type=ActivityType.LISTENING, details=title, state=track, end=time_remaining,
                large_image=artwork, large_text=track, buttons=lastfmProfileButton)
 
 
