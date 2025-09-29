@@ -37,6 +37,7 @@ And you are good to go, try exiting your user on windows an logging in again to 
 
 ### Windows, MacOS or Linux (Using Python)
 - Download and install python (During the instalation, check the option to add python to the PATH(Windows).
+- Make sure to have tkinter (python-tk/python-tkinter) installed. (It might be asked when trying to run the script) You can check if you have it by running `python -m tkinter`.
 - Download the [source code](https://github.com/Gust4Oliveira/Last.fm-Discord-Rich-Presence/archive/master.zip).
 - Create a text file named as "username.txt" in the same folder of the .py files.
 - Open the username.txt file and just insert your last.fm username inside of it, like below:
